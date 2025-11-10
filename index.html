@@ -169,6 +169,11 @@
             transform: translateY(-3px);
         }
 
+        .btn-instagram {
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            color: white;
+        }
+
         /* Sobre */
         .about {
             background-color: white;
@@ -358,6 +363,33 @@
             color: #aaa;
         }
 
+        /* Botão Flutuante do Instagram */
+        .instagram-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .instagram-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .instagram-float a:hover {
+            transform: scale(1.1);
+        }
+
         /* Responsividade */
         @media (max-width: 768px) {
             .header-container {
@@ -405,6 +437,13 @@
     </style>
 </head>
 <body>
+    <!-- Botão Flutuante do Instagram -->
+    <div class="instagram-float">
+        <a href="https://www.instagram.com/mariajoaorestaurantejk" target="_blank" title="Siga-nos no Instagram">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
     <!-- Header -->
     <header>
         <div class="container header-container">
@@ -589,8 +628,11 @@
                     <i class="fas fa-envelope"></i>
                     <h3>E-mail</h3>
                     <p>restauranteeeventosmariajoao@gmail.com</p>
+                    <a href="https://www.instagram.com/mariajoaorestaurantejk" class="btn btn-instagram" target="_blank">
+                        <i class="fab fa-instagram"></i> Siga-nos no Instagram
+                    </a>
                     <div class="social-links">
-                        <a href="https://www.instagram.com/mariajoãorestaurantejk" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/mariajoaorestaurantejk" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
                     </div>
                 </div>
@@ -605,6 +647,10 @@
                 <div class="footer-column">
                     <h3>Restaurante Maria João</h3>
                     <p>Deliciosa culinária em Taubaté. Receitas tradicionais e os melhores ingredientes.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/mariajoaorestaurantejk" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-column">
