@@ -363,7 +363,7 @@
             color: #aaa;
         }
 
-        /* Botão Flutuante do Instagram */
+        /* Botões Flutuantes */
         .instagram-float {
             position: fixed;
             bottom: 20px;
@@ -387,6 +387,32 @@
         }
 
         .instagram-float a:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .whatsapp-float a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .whatsapp-float a:hover {
             transform: scale(1.1);
         }
 
@@ -433,14 +459,32 @@
             .menu-items {
                 grid-template-columns: 1fr;
             }
+            
+            .whatsapp-float, .instagram-float {
+                bottom: 10px;
+            }
+            
+            .whatsapp-float {
+                left: 10px;
+            }
+            
+            .instagram-float {
+                right: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- Botão Flutuante do Instagram -->
+    <!-- Botões Flutuantes -->
     <div class="instagram-float">
         <a href="https://www.instagram.com/mariajoaorestaurantejk" target="_blank" title="Siga-nos no Instagram">
             <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <div class="whatsapp-float">
+        <a href="https://wa.me/5512988089797" target="_blank" title="Fale conosco no WhatsApp">
+            <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
